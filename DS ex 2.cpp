@@ -153,3 +153,51 @@ void print(struct snode *head)
 		p=p->next;
 }
 }
+
+output :
+
+1.Insertion 2.Deletion 3.find 4.findprevious 5.print 6.exit
+Enter the choice for operations
+1
+Enter the element to be inserted
+5
+Enter the element after which new to be inserted
+-1
+Before Insertion
+-1-->After Insertion
+-1-->5-->
+1.Insertion 2.Deletion 3.find 4.findprevious 5.print 6.exit
+Enter the choice for operations
+1
+Enter the element to be inserted
+10
+Enter the element after which new to be inserted
+5
+Before Insertion
+-1-->5-->After Insertion
+-1-->5-->10-->
+1.Insertion 2.Deletion 3.find 4.findprevious 5.print 6.exit
+Enter the choice for operations
+1
+Enter the element to be inserted
+15
+Enter the element after which new to be inserted
+10
+Before Insertion
+-1-->5-->10-->After Insertion
+-1-->5-->10-->15-->
+1.Insertion 2.Deletion 3.find 4.findprevious 5.print 6.exit
+Enter the choice for operations
+2
+Enter the element to be deleted
+10
+Before Deletion
+-1-->5-->10-->15-->After Deletion
+-1-->5-->15-->
+1.Insertion 2.Deletion 3.find 4.findprevious 5.print 6.exit
+Enter the choice for operations
+5
+The elements in the linked list are
+-1-->5-->15-->
+1.Insertion 2.Deletion 3.find 4.findprevious 5.print 6.exit
+Enter the choice for operations
