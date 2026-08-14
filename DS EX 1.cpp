@@ -119,3 +119,40 @@ void display()
 	printf("%d ",a[i]);
 	}
 }
+
+output
+Enter the number of elements in the list
+4
+Enter the element for array : 10
+Enter the element for array : 9
+Enter the element for array : 8
+Enter the element for array : 7
+
+1.Insertion, 2.Deletion, 3.Search, 4. Display, 5.Exit
+Enter your choice
+1
+Enter the element to be inserted
+5
+Enter the position for insertion
+2
+
+The elements of the list are
+10 9 5 8 7
+1.Insertion, 2.Deletion, 3.Search, 4. Display, 5.Exit
+Enter your choice
+2
+Enter the position of the element to be deleted
+7
+The deleted value is 0
+
+The elements of the list are
+10 9 5 8
+1.Insertion, 2.Deletion, 3.Search, 4. Display, 5.Exit
+Enter your choice
+4
+
+The elements of the list are
+10 9 5 8
+1.Insertion, 2.Deletion, 3.Search, 4. Display, 5.Exit
+Enter your choice
+
