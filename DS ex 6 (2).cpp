@@ -90,3 +90,44 @@ i=(i+1)%5;
 } 
 } 
 } 
+
+OUTPUT:
+
+1.Insertion,2.Deletion,3.Find,4.Find previous,5.Print,6.Exit
+Enter the choice for operation
+1
+Enter the element to be inserted
+9
+Enter the element after which new to be inserted
+-1
+Before insertion
+NULL
+After insertion
+9->NULL
+
+1.Insertion,2.Deletion,3.Find,4.Find previous,5.Print,6.Exit
+Enter the choice for operation
+1
+Enter the element to be inserted
+5
+Enter the element after which new to be inserted
+9
+Before insertion
+9->NULL
+After insertion
+9->5->NULL
+
+1.Insertion,2.Deletion,3.Find,4.Find previous,5.Print,6.Exit
+Enter the choice for operation
+4
+Enter the element to be searched
+5
+The previous snode address of the element is 00000000007714A0
+
+1.Insertion,2.Deletion,3.Find,4.Find previous,5.Print,6.Exit
+Enter the choice for operation
+6
+
+--------------------------------
+Process exited after 17.38 seconds with return value 0
+Press any key to continue . . .
