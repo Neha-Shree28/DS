@@ -21,9 +21,9 @@ head->data=-1;
 head->next=head; 
 while(1) 
 { 
-printf("\n1.Insertion  2.Deletion  3.find  4.findprevious  5.print  6.exit\n"); 
-printf("Enter the choice for operations\n"); 
-scanf("%d",&ch); 
+ printf("\n1.Insertion  2.Deletion  3.find  4.findprevious  5.print  6.exit\n"); 
+ printf("Enter the choice for operations\n"); 
+ scanf("%d",&ch); 
 switch(ch) 
 { 
 case 1: printf("Enter the element to be inserted\n"); 
@@ -68,89 +68,132 @@ case 6:exit(0);
 break; 
 } 
 } 
-getch(); 
+ getch(); 
 } 
 void insertion(struct cnode *head,int x,int m) 
 { 
-struct cnode *newnode,*p; 
-newnode=(struct cnode*)malloc(sizeof(struct cnode)); 
-newnode->data=x; 
+ struct cnode *newnode,*p; 
+ newnode=(struct cnode*)malloc(sizeof(struct cnode)); 
+ newnode->data=x; 
 if(m==-1) 
 { 
-newnode->next=head->next; 
-head->next=newnode; 
+ newnode->next=head->next; 
+ head->next=newnode; 
 } 
 else 
 { 
-p=head->next; 
+ p=head->next; 
 while(p!=head) 
 { 
 if(m==p->data) 
 { 
-newnode->next=p->next; 
-p->next=newnode; 
+ newnode->next=p->next; 
+ p->next=newnode; 
 return; 
 } 
 else 
-p=p->next; 
+ p=p->next; 
 } 
 } 
 } 
 void deletion(struct cnode *head,int x) 
 { 
-struct cnode *p,*pre; 
-pre=head; 
-p=head->next; 
+ struct cnode *p,*pre; 
+ pre=head; 
+ p=head->next; 
 while(p!=head) 
 { 
 if(x==p->data) 
 { 
-pre->next=p->next; 
-free(p); 
-return; 
+ pre->next=p->next; 
+ free(p); 
+ return; 
 } 
 else 
 { 
-pre=p; 
-p=p->next; 
+ pre=p; 
+ p=p->next; 
 } 
 } 
 } 
 struct cnode *find(struct cnode *head, int x) 
 { 
 struct cnode *p; 
-p=head->next; 
+ p=head->next; 
 while(p!=head) 
 { 
 if(x==p->data) 
 return(p); 
 else 
-p=p->next; 
+ p=p->next; 
 } 
 } 
 struct cnode *findprevious(struct cnode *head, int x) 
 { 
-struct cnode *p,*pre; 
-pre=head; 
-p=head->next; 
+  struct cnode *p,*pre; 
+  pre=head; 
+  p=head->next; 
 while(p!=head) 
 { 
 if(x==p->data) 
 return(pre); 
 else 
 { 
-pre=p; 
-p=p->next; 
+  pre=p; 
+  p=p->next; 
 } 
 } 
 } 
 void print(struct cnode *head) 
 { 
-struct cnode *p; 
-p=head->next; 
+  struct cnode *p; 
+  p=head->next; 
 while(p!=head) 
 { 
-printf("%d-->",p->data); 
-p=p->next; 
+  printf("%d-->",p->data); 
+  p=p->next; 
 } 
 }
+
+OUTPUT :
+
+1.Insertion,2.Deletion,3.Find,4.Find previous,5.Print,6.Exit
+Enter the choice for operation
+1
+Enter the element to be inserted
+5
+Enter the element after which new to be inserted
+-1
+Before insertion
+NULL
+After insertion
+5->NULL
+
+1.Insertion,2.Deletion,3.Find,4.Find previous,5.Print,6.Exit
+Enter the choice for operation
+1
+Enter the element to be inserted
+8
+Enter the element after which new to be inserted
+5
+Before insertion
+5->NULL
+After insertion
+5->8->NULL
+
+1.Insertion,2.Deletion,3.Find,4.Find previous,5.Print,6.Exit
+Enter the choice for operation
+4
+Enter the element to be searched
+8
+The previous snode address of the element is 0000000000C41470
+
+1.Insertion,2.Deletion,3.Find,4.Find previous,5.Print,6.Exit
+Enter the choice for operation
+5
+The elements in the linked list are
+5->8->NULL
+
+1.Insertion,2.Deletion,3.Find,4.Find previous,5.Print,6.Exit
+Enter the choice for operation
+
